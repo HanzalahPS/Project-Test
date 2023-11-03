@@ -21,16 +21,9 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 });
 
 Route::post('/find-duplicates', [DuplicateController::class, 'findDuplicates']);
-
-
-
 Route::post('/upload-employee', [AttendanceController::class, 'uploadEmployee']);
-
 Route::post('/upload-attendance', [AttendanceController::class, 'uploadAttendance']);
 Route::post('/upload-location', [AttendanceController::class, 'uploadLocation']);
 Route::post('/upload-attendance-fault', [AttendanceController::class, 'uploadAttendanceFault']);
 Route::post('/upload-schedule', [AttendanceController::class, 'uploadSchedule']);
-
-
-
-
+Route::post('/upload-shift', [AttendanceController::class, 'uploadShift']);
